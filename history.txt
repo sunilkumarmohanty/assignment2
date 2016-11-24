@@ -1,0 +1,359 @@
+    1  ls
+    2  dir
+    3  ls -l
+    4  cd Desktop/
+    5  ls
+    6  ifconfig
+    7  sudo arp-scan --interface=enp0s3 --localnet
+    8  nmap -sn 10.0.2.15/24
+    9  sudo apt install nmap
+   10  nmap -sn 10.0.2.15/24
+   11  nmap -sn 10.0.2.0/24
+   12  nmap -sn 10.0.0.0/24
+   13  nmap -sn 10.0.2.0/24
+   14  man nmap
+   15  nmap -sn 10.0.2.0/24
+   16  ifconfig
+   17  nmap -sn 10.0.2.0/24
+   18  nmap --help
+   19  nmap -v -sn 10.0.2.0/24
+   20  nmap -sn 10.0.2.0/24
+   21  nmap -sP 10.0.2.0/24
+   22  nmap -sP 192.168.56.0/24
+   23  nmap -sn 192.168.56.0/24
+   24  nmap -sn 192.168.99.0/24
+   25  nmap -sn 192.168.3.0/24
+   26  ifconfig
+   27  nmap -sn 192.168.3.0/24
+   28  ifconfig
+   29  nmap -sn 192.168.3.0/24
+   30  nmap -sP 192.168.3.0/24
+   31  nmap -sn 192.168.3.0/24
+   32  ~
+   33  man nmap
+   34  nmap -p 80,8080 192.168.1.0-255
+   35  nmap -p 80,8080 192.168.3.0-255
+   36  nmap -T5 192.168.3.0/24
+   37  sudo apt install ettercap
+   38  sudo apt-get install zlib1g zlib1g-dev
+   39  sudo apt-get install ettercap
+   40  sudo apt-get install ettercap-graphical
+   41  sudo apt-get install zlib1g zlib1g-dev
+   42  ping fi.archive.ubuntu.com
+   43  sudo apt-get install zlib1g zlib1g-dev
+   44  ping fi.archive.ubuntu.com
+   45  ping fi.archive.ubuntu.com
+   46  ifconfig
+   47  ifconfig --help
+   48  ifconfig
+   49  clc
+   50  cls
+   51  clear
+   52  cls
+   53  clear
+   54  ping fi.archive.ubuntu.com
+   55  clear
+   56  sudo apt-get install zlib1g zlib1g-dev
+   57  sudo apt-get install build-essential
+   58  sudo apt-get install ettercap
+   59  sudo apt-get install ettercap-graphical
+   60  sudo ettercap -G
+   61  sudo apt-add-repository universe
+   62  sudo apt-get update
+   63  sudo apt-get install wireshark
+   64  sudo wireshark
+   65  sudo apt-get install wireshark
+   66  sudo apt-get update
+   67  sudo apt-get install wireshark
+   68  sudo apt-add-repository universe
+   69  sudo apt-get install wireshark
+   70  sudo wireshark
+   71  apt-get install subversion
+   72  sudo apt-get install subversion
+   73  ffmpeg
+   74  sudo apte install ffmpeg
+   75  sudo apt install ffmpeg
+   76  ping fi.archive.ubuntu.com
+   77  sudo apt install ffmpeg
+   78  sudo apt install subversion
+   79  exit
+   80  sudo apt install ffmpeg
+   81  gcc
+   82  clear
+   83  ls
+   84  cd Documents/
+   85  cd network-security/assignment2/
+   86  ls
+   87  gcc certificate_reader.c 
+   88  ping google.co
+   89  ping google.com
+   90  exit
+   91  ./openssl "https://expired.badssl.com/", 443
+   92  ./openssl "https://expired.badssl.com", 443
+   93  ./openssl "https://google.com", 443
+   94  ./openssl google.com", 443
+   95  ./openssl google.com, 443
+   96  ./openssl 
+   97  ./openssl https://google.com 443
+   98  cd certs
+   99  ls
+  100  cd /home
+  101  ls
+  102  cd ide
+  103  ls
+  104  ls -l
+  105  cd idea-IU-162.2228.15/
+  106  ls
+  107  cd..
+  108  cd ..
+  109  rm -f ide
+  110  rm -rf ide
+  111  dir
+  112  ls
+  113  cd ide
+  114  ls
+  115  dir
+  116  cd idea-IU-162.2228.15/
+  117  dir
+  118  ls
+  119  cd bin
+  120  ls
+  121  ./idea.sh
+  122  bg
+  123  sudo ./idea.sh
+  124  bg 1
+  125  bg [1]
+  126  bg [2]
+  127  python3 certificate4.py 
+  128  python certificate4.py 
+  129  python certificate6.py 
+  130  python3 certificate6.py 
+  131  sudo python3 certificate6.py 
+  132  sudo python3 certificate6.py google.com
+  133  pip install OpenSSL
+  134  apt-get install libssl-dev
+  135  sudo apt-get install libssl-dev
+  136  python3 certificate6.py google.com
+  137  sudo apt-get install python-openssl
+  138  python3 certificate6.py google.com
+  139  pip install pyOpenSSL
+  140  sudo pip install pyOpenSSL
+  141  pip install pyOpenSSL
+  142  pip install python-openssl
+  143  pip install openssl
+  144  sudo pip install pyOpenSSL
+  145  python3 certificate6.py google.com
+  146  python certificate6.py google.com
+  147  python --v
+  148  python -v
+  149  python -version
+  150  python -Version
+  151  python -V
+  152  python certificate6.py google.com
+  153  python certificate6.py https://expired.badssl.com/
+  154  python certificate6.py google.com
+  155  python certificate6.py https://expired.badssl.com/
+  156  python certificate6.py google.com
+  157  python certificate6.py https://expired.badssl.com/
+  158  python certificate6.py google.com
+  159  python certificate6.py https://expired.badssl.com/
+  160  python certificate6.py google.com
+  161  python certificate6.py https://expired.badssl.com/
+  162  python certificate6.py google.com
+  163  python certificate6.py https://expired.badssl.com/
+  164  python certificate6.py google.com
+  165  python certificate6.py https://expired.badssl.com/
+  166  touch post-install-script
+  167  gedit post-install-script 
+  168  cd /home
+  169  ls
+  170  cls
+  171  cd
+  172  cd Documents/network-security/assignment2/
+  173  ls
+  174  ./post-install-script
+  175  ls -l
+  176  sudo ./post-install-script
+  177  sudo 775 post_install_script
+  178  sudo ./post-install-script.sh
+  179  ls
+  180  ls -l
+  181  chmod 775 post-install-script.sh 
+  182  sudo ./post-install-script.sh
+  183  java
+  184  sudo apt-get install default-jre
+  185  sudo apt-get install default-jdk
+  186  java
+  187  java -help
+  188  whereis java
+  189  cd /usr/bin
+  190  ls
+  191  cd java
+  192  ls
+  193  cd java
+  194  sudo gedit /etc/profile
+  195  apt-get install oracle-java7-installer && echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections && update-java-alternatives -s java-7-oracle &&
+  196  apt-get install oracle-java7-installer && echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections && update-java-alternatives -s java-7-oracle
+  197  sudo apt-get install oracle-java7-installer && echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections && update-java-alternatives -s java-7-oracle
+  198  cd Documents/
+  199  ls
+  200  cd network-security/
+  201  ls
+  202  cd ass
+  203  ls
+  204  cd assignment2/
+  205  ls
+  206  mv post-install-script.sh ../../
+  207  ls
+  208  cd ../..
+  209  ls
+  210  mkdir configuration
+  211  cp post-install-script.sh configuration/
+  212  ls
+  213  mv post-install-script.sh configuration/
+  214  ls
+  215  d configuration/
+  216  ls
+  217  cd configuration/
+  218  ls
+  219  git init
+  220  sudo gedit post-install-script.sh 
+  221  sudo apt install git
+  222  git init
+  223  git remote add origin https://github.com/sunilkumarmohanty/configuration.git
+  224  git pull
+  225  git pull origin
+  226  git pull origin master
+  227  git statis
+  228  git status
+  229  git add post-install-script.sh 
+  230  git commit -am "initial script"
+  231  git config --global user.email "sunilkumarmohanty@gmail.com
+  232  "
+  233  git config --global user.name "Sunil"
+  234  git commit -am "initial script"
+  235  git push
+  236  git push origin
+  237  ssh-keygen -t rsa -b 4096 -C "sunilkumarmohanty@gmail.com"
+  238  eval "$(ssh-agent -s)"
+  239  ssh-add ~/
+  240  sudo apt-get install xclip
+  241  xclip -sel clip < ~/.ssh/id_rsa.pub
+  242  git push
+  243  git push origin
+  244  git push --set-upstrram origin master
+  245  git push --set-upstream origin master
+  246  git status
+  247  git commit -am "xclip"
+  248  git push
+  249  exit
+  250  git status
+  251  git commit -am "update"
+  252  git push origin
+  253  git push
+  254  git pull
+  255  git remote set-url origin git@github.com:sunilkumarmohanty/configuration.git
+  256  git pull
+  257  git push
+  258  sudo apt-get install virtualbox 
+  259  sudo apt-get - y install virtualbox 
+  260  sudo apt-get -y install virtualbox 
+  261  atom .
+  262  python certificate5.py
+  263  ls
+  264  python3 ssl3.py "https://google.com" 443
+  265  apt-cache search libssl | grep SSL
+  266  sudo apt-get install libssl
+  267  sudo apt-get install libssl-dev
+  268  python3 ssl3.py "https://google.com" 443
+  269  python3 -V
+  270  sudo apt-get install python-openssl
+  271  sudo apt autoremove
+  272  python3 -V
+  273  python3 ssl3.py "https://google.com" 443
+  274  sudo apt-get install python-openssl
+  275  sudo pip install pyOpenSSL
+  276  sudo apt-get install libssl-dev 
+  277  python ssl3.py "https://google.com" 443
+  278  python ssl3.py "google.com" 443
+  279  pip3 install -U pyOpenSSL
+  280  sudo pip3 install -U pyOpenSSL
+  281  python ssl3.py "google.com" 443
+  282  sudo pip3 install -U openssl-dev
+  283  sudo pip3 install -U libssl-dev
+  284  python ssl3.py "www.bahnbilder.de" 443
+  285  python ssl3.py "google.com" 443
+  286  python ssl3.py "www.bahnbilder.de" 443
+  287  python ssl3.py "revoked.badssl.com" 443
+  288  python ssl3.py "revoked.grc.com" 443
+  289  python ssl3.py "revoked.grc.com" 443 >> test.txt
+  290  python ssl3.py "revoked.grc.com" 443
+  291  python ssl3.py "revoked.grc.com" 443 >> test.txt
+  292  python ssl3.py "revoked.grc.com" 443 
+  293  python ssl3.py "revoked.grc.com" 443 >> test.txt
+  294  python ssl3.py "revoked.grc.com" 443 
+  295  python ssl3.py "revoked.grc.com" 443 >> test.txt
+  296  python ssl3.py "revoked.grc.com" 443
+  297  python3 ss4.py "google.com" 443
+  298  python3 ssl4.py "google.com" 443
+  299  python3 ssl3.py "revoked.grc.com" 443
+  300  python3 ssl4.py "revoked.grc.com" 443
+  301  python3 ssl4.py "google.com" 443
+  302  python3 ssl4.py "revoked.grc.com" 443
+  303  python3 ssl4.py "google.com" 443
+  304  python3 ssl4.py "revoked.grc.com" 443
+  305  python3 ssl4.py "google.com" 443
+  306  sudo rm pycharm-2016.3/
+  307  sudo rm -rf pycharm-2016.3/
+  308  ls
+  309  sudo tar -xvzf /home/ide/pycharm.tar.gz -C /home/ide/
+  310  cd /home/ide
+  311  ls
+  312  cd py
+  313  cd pycharm-2016.3/
+  314  ls
+  315  cd bin
+  316  ls
+  317  ./pycharm.sh 
+  318  bg
+  319  python3 ssl4.py "google.com" 443
+  320  python3 ssl6.py "google.com" 443
+  321  cd /
+  322  ;s
+  323  ls
+  324  cd 
+  325  ls
+  326  cd Documents/network-security/assignment2/
+  327  python3 ssl6.py "google.com" 443
+  328  python3 ssl6.py "www.google.com" 443
+  329  python ssl6.py "revoked.grc.com" 443
+  330  python3 ssl6.py "revoked.grc.com" 443
+  331  python3 ssl6.py www.google.com 443
+  332  clear
+  333  python3 ssl7.py www.google.com 443
+  334  python3 ssl6.py www.google.com 443
+  335  python3 ssl7.py www.google.com 443
+  336  python3 ssl6.py www.google.com 443
+  337  python3 ssl8.py www.google.com 443
+  338  python3 ssl6.py www.google.com 443
+  339  python3 ssl6.py www.yahoo.com 443
+  340  python3 ssl6.py www.adom.de 443
+  341  python3 ssl6.py  tv.eurosport.com  443
+  342  python3 ssl6.py tv.eurosport.com 443
+  343  python3 ssl6.py www.bahnbilder.de 443
+  344  python3 ssl6.py test-sspev.verisign.com 2443
+  345  python3 ssl6.py cacert.org 443
+  346  python3 ssl6.py www.google.com 443
+  347  python3 ssl6.py www.yahoo.com 443
+  348  python3 ssl6.py www.adom.de 443
+  349  python3 ssl6.py tv.eurosport.com 443
+  350  python3 ssl6.py www.bahnbilder.de 443
+  351  python3 ssl6.py test-sspev.verisign.com 2443
+  352  python3 ssl6.py cacert.org 443
+  353  python3 ssl3.py revoked.grc.com 443
+  354  python3 ssl6.py revoked.grc.com 443
+  355  python3 ssl6.py www.google.com 443
+  356  python3 ssl6.py www.yahoo.com 443
+  357  clear
+  358  history
+  359  history >> history.txt
