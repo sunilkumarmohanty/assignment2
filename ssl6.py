@@ -47,6 +47,8 @@ def CheckCRL(link, cert):
     try:
         revoked_objects = crl_object.get_revoked()
         c_serial = "%X" % (cert.get_serial_number(),)
+        print("####################################")
+        print(c_serial)
         for rvk in revoked_objects:
             r_serial = rvk.get_serial().decode()
             if r_serial == c_serial:
@@ -87,7 +89,7 @@ def VerifyCertificate(conn, x509, errno, errdepth, retcode):
     if x509.has_expired() == True:
         exp_time = x509.get_notAfter().decode()
         expire_date = datetime.strptime(exp_time, "%Y%m%d%H%M%SZ")
-        #print(expire_date)
+        print(expire_date)
         print("Exiting due to error: Certificate expired on ",expire_date)
         return False
 
@@ -145,6 +147,7 @@ if __name__  == "__main__":
     sys.exit(1)
 ctx = OpenSSL.SSL.Context(OpenSSL.SSL.SSLv23_METHOD)
 ctx.set_verify(OpenSSL.SSL.VERIFY_PEER | OpenSSL.SSL.VERIFY_FAIL_IF_NO_PEER_CERT, VerifyCertificate)
+#ctx.set_verify(OpenSSL.SSL.VERIFY_CLIENT_ONCE, VerifyCertificate)
 ctx.load_verify_locations(None, "/etc/ssl/certs/")
 ctx.check_hostname = True
 
@@ -160,8 +163,9 @@ try:
     ssl.setblocking(True)
     ssl.set_connect_state()
     ssl.do_handshake()
+
 except Exception as e:
-    #print(e)
+    print(e)
     #exit("[-] ssl handshake error")
     sys.exit(0)
 s.shutdown(0)
