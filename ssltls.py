@@ -1,3 +1,11 @@
+"""
+Author  : Sunil Kumar Mohanty
+Course  : Network Security
+Purpose : SSL/TLS validation check as per Assignment 2
+"""
+
+
+
 import OpenSSL.SSL
 import socket
 import sys
@@ -30,6 +38,29 @@ def PrintCertificate(x509):
     print("===============================================")
     # print(x509.get_notAfter()
 
+def CheckName(x509):
+    try:
+        dnsname = hostname
+        cname = x509.get_subject().CN
+
+        if cname == hostname or cname == "*." + hostname or cname == "*." + dnsname.split('.', 1)[1]:
+            return True
+        else:
+            try:
+                for i in range(0, x509.get_extension_count() - 1):
+                    dnsstart = x509.get_extension(i).get_short_name().find(b'subjectAltName')
+                    if (dnsstart != -1):
+                        altnames = str(x509.get_extension(i)).split("DNS:")
+            except Exception as e:
+                print(e)
+
+            for name in altnames:
+                cname = name.replace(",","").strip()
+                if cname == hostname or cname == "*." + hostname or cname == "*." + dnsname.split('.', 1)[1]:
+                    return True
+            return False
+    except Exception as e:
+        return False
 
 def CheckCRL(link, cert):
     return_flag = True
@@ -78,10 +109,6 @@ def VerifyCRL(cert):
 
 # uses HOST
 def VerifyCertificate(conn, x509, errno, errdepth, retcode):
-    """
-      callback for certificate validation
-      should return true if verification passes and false otherwise
-    """
     VerifyCertificate.counter += 1
     PrintCertificate(x509)
     if x509.has_expired() == True:
@@ -103,7 +130,6 @@ def VerifyCertificate(conn, x509, errno, errdepth, retcode):
 
     # Check for CRL Revocation
 
-
     crlVerification  = VerifyCRL(x509)
     if crlVerification == False:
         print("Certificate revoked")
@@ -119,18 +145,11 @@ def VerifyCertificate(conn, x509, errno, errdepth, retcode):
                 print("Certificate Trust Cannot be Verified")
                 return False
 
-            dnsname = "*." + hostname
-            cname = x509.get_subject().CN
-            if cname == hostname or cname == "*."+hostname or cname == "*."+dnsname.split('.', 1)[1]:
-                return True
-            else:
-
-                #print(x509.get_subject().CN)
-                cname.split('.')
-                #print(str1.split('.'))
-                print("Exiting due to error: Common name does not match host, expected : " + hostname, " , got: " + cname)
+            if(CheckName(x509)==False):
+                print("Exiting due to error: Common name does not match host, expected : " + hostname + " got : " + x509.get_subject().CN)
                 return False
-
+            else:
+                return True
     else:
         return False
 
@@ -160,11 +179,18 @@ try:
     ssl.setblocking(True)
     ssl.set_connect_state()
     ssl.do_handshake()
-except Exception as e:
-    #print(e)
-    #exit("[-] ssl handshake error")
-    sys.exit(0)
-s.shutdown(0)
 
-r = requests.get('https://'+hostname)
+except Exception as e:
+    print(e)
+    exit("[-] ssl handshake error")
+    sys.exit(0)
+
+try:
+    r = requests.get('https://'+hostname)
+except Exception as ex:
+    print("Exiting due to error:", ex)
+    exit()
+
 print(r.content)
+r.close()
+s.shutdown(0)
